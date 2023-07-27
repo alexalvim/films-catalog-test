@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,18 +25,20 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run server`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run a json-server in `localhost:3003` to provide the favorite data.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Step by step to run the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository to your machine.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Enter the project directory.
 
-## Learn More
+3. Run `npm install` to install project dependencies.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. In file `src/server/utils.ts` set `OMDB_API_KEY` to your api key(use `https://www.omdbapi.com/` to generate your api key).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Run `npm run server` to run the favorite server in `localhost:3003`.
+
+6. In other terminal window run `npm start` to run the aplication in `localhost:3000`.
